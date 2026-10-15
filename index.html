@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Детектив 🕵️</title>
+  <link rel="icon" href="online-class-svgrepo-com.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game">
+    <header>
+      <h1>🕵️ HTML Детектив</h1>
+      <div class="stats">
+        <span>Уровень: <b id="level">1</b>/<b id="total">12</b></span>
+        <span>Очки: <b id="score">0</b></span>
+      </div>
+    </header>
+
+    <div class="progress"><div class="progress-fill" id="progress"></div></div>
+
+    <div id="game-area">
+      <div class="task">
+        <div class="task-label">📋 Задание</div>
+        <div class="task-text" id="task-text"></div>
+        <div class="hint" id="hint"></div>
+      </div>
+
+      <div class="section-label">💻 Твой код</div>
+      <div class="workspace" id="workspace"></div>
+
+      <div class="section-label">🧩 Доступные теги (нажми, чтобы поставить)</div>
+      <div class="pool" id="pool"></div>
+
+      <div class="buttons">
+        <button id="check-btn">✅ Проверить</button>
+        <button id="reset-btn">🔄 Сбросить</button>
+        <button id="next-btn">➡️ Дальше</button>
+      </div>
+
+      <div class="message" id="message"></div>
+
+      <div class="preview-box" id="preview-box">
+        <h3>👀 Так это выглядит в браузере</h3>
+        <div id="preview"></div>
+      </div>
+    </div>
+
+    <div class="win-screen" id="win-screen">
+      <h2>🎉 Ты справился!</h2>
+      <p>Ты собрал все HTML-страницы как настоящий программист.</p>
+      <div class="final-score" id="final-score">0</div>
+      <p>очков</p>
+      <button id="restart-btn">Играть снова</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
